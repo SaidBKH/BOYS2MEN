@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prestations & tarifs — Boys 2 Men Annemasse. Coupe homme, coupe enfant, barbe, coupe + barbe. Réservation en ligne via Planity.">
+  <meta name="keywords" content="tarif barber Annemasse, prix coupe homme Annemasse, coupe barbe Annemasse, Boys 2 Men tarifs">
+  <meta property="og:title" content="Prestations & Tarifs — Boys 2 Men Annemasse">
+  <meta property="og:description" content="Coupe homme, barbe, coupe enfant — des prestations premium à Annemasse.">
+  <meta property="og:image" content="img/IMG_9151.JPG">
+  <meta name="theme-color" content="#0B0B0B">
+  <title>Prestations & Tarifs — Boys 2 Men | Coupe Homme Barbe Annemasse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <style>
+    /* Prestations-specific tweaks */
+    .presta-note {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 40px var(--pad-x) 0;
+      text-align: center;
+    }
+    .presta-note p {
+      font-family: var(--ff-label);
+      font-size: 9.5px;
+      letter-spacing: 0.3em;
+      color: var(--concrete);
+    }
+    .presta-extra {
+      background: var(--charcoal-mid);
+      max-width: var(--max-w);
+      margin: 1px auto 0;
+      padding: clamp(40px,5vw,72px) clamp(32px,4.5vw,60px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .presta-extra__text h3 {
+      font-family: var(--ff-display);
+      font-size: clamp(24px, 3vw, 40px);
+      letter-spacing: 0.04em;
+      color: var(--offwhite);
+      text-transform: uppercase;
+    }
+    .presta-extra__text p {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--concrete);
+      margin-top: 8px;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body class="is-loading">
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader__brand">BOYS 2 MEN</div>
+    <div class="loader__sub">Prestations</div>
+    <div class="loader__bar-wrap">
+      <div class="loader__bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" id="navMobile">
+    <ul class="nav-mobile__links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="concept.html">Concept</a></li>
+      <li><a href="prestations.html">Prestations</a></li>
+      <li><a href="nous-rejoindre.html">Nous Rejoindre</a></li>
+    </ul>
+    <div class="nav-mobile__sub">
+      <span>74100 Annemasse</span><span>·</span><span>4.6 / 5</span>
+    </div>
+    <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+       target="_blank" rel="noopener" class="btn btn--gold">
+      <span class="btn__text">RÉSERVER</span>
+    </a>
+    <p class="nav-mobile__bottom">BOYS 2 MEN — BARBER ANNEMASSE</p>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">BOYS <span class="navbar__logo-accent">2</span> MEN</a>
+      <ul class="navbar__links">
+        <li><a href="index.html" class="navbar__link">Accueil</a></li>
+        <li><a href="concept.html" class="navbar__link">Concept</a></li>
+        <li><a href="prestations.html" class="navbar__link">Prestations</a></li>
+        <li><a href="nous-rejoindre.html" class="navbar__link">Nous Rejoindre</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+           target="_blank" rel="noopener" class="btn btn--gold navbar__cta">
+          <span class="btn__text">RÉSERVER</span>
+        </a>
+        <button class="navbar__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ================================================
+         HERO
+         ================================================ -->
+    <section class="prestations-hero">
+      <div class="prestations-hero__img">
+        <img src="img/IMG_9151.JPG"
+             alt="Salon Boys 2 Men Annemasse — prestations et tarifs"
+             loading="eager" fetchpriority="high">
+      </div>
+      <div class="prestations-hero__overlay"></div>
+      <div class="prestations-hero__content">
+        <div class="section-label"><span>Ce que nous proposons</span></div>
+        <h1 class="t-lg">NOS<br>PRESTATIONS</h1>
+        <p class="t-body" style="color: var(--concrete); margin-top: 16px; max-width: 480px;">
+          Des services pensés pour l'homme moderne. Chaque prestation est une promesse de précision.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================================
+         TICKER
+         ================================================ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__item">
+          <span>COUPE HOMME</span><span class="ticker__sep">·</span>
+          <span>BARBE</span><span class="ticker__sep">·</span>
+          <span>COUPE ENFANT</span><span class="ticker__sep">·</span>
+          <span>COUPE + BARBE</span><span class="ticker__sep">·</span>
+          <span>PRECISION</span><span class="ticker__sep">·</span>
+          <span>STYLE</span><span class="ticker__sep">·</span>
+          <span>BOYS 2 MEN</span><span class="ticker__sep">·</span>
+          <span>ANNEMASSE</span><span class="ticker__sep">·</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+         GRILLE PRESTATIONS
+         ================================================ -->
+    <section class="section" style="background: var(--black); padding-bottom: 0;">
+      <div style="max-width: var(--max-w); margin: 0 auto; padding: 0 var(--pad-x); margin-bottom: 48px;">
+        <div class="section-label" data-reveal><span>Nos services</span></div>
+        <h2 class="t-md" style="color: var(--offwhite);" data-reveal data-delay="0.1">
+          CHAQUE GESTE,<br>UN ART
+        </h2>
+      </div>
+
+      <div class="presta-grid">
+
+        <!-- 01 — Coupe Homme -->
+        <article class="presta-card card-border lift">
+          <span class="presta-card__index">01</span>
+          <h2 class="presta-card__name">COUPE HOMME</h2>
+          <p class="presta-card__desc">
+            Coupe sur mesure, réalisée à la tondeuse ou aux ciseaux selon votre morphologie et vos envies. Finitions rasoir, contours nets, séchage inclus. Votre style, millimètre par millimètre.
+          </p>
+          <div class="presta-card__meta">
+            <span class="presta-card__duration">~ 30 MIN</span>
+            <span class="presta-card__price">20€</span>
+          </div>
+          <div class="presta-card__cta">
+            <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--sm">
+              <span class="btn__text">RÉSERVER</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 — Coupe + Barbe -->
+        <article class="presta-card card-border lift" style="border-left: 1px solid rgba(201,168,106,0.2);">
+          <span class="presta-card__index">02</span>
+          <h2 class="presta-card__name">COUPE + BARBE</h2>
+          <p class="presta-card__desc">
+            Le combo signature de Boys 2 Men. Coupe homme complète suivie d'une taille de barbe soignée. Ligne parfaite, visage sculpté. Le look complet en une seule session.
+          </p>
+          <div class="presta-card__meta">
+            <span class="presta-card__duration">~ 45 MIN</span>
+            <span class="presta-card__price">35€</span>
+          </div>
+          <div class="presta-card__cta">
+            <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--sm">
+              <span class="btn__text">RÉSERVER</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 — Coupe Enfant -->
+        <article class="presta-card card-border lift">
+          <span class="presta-card__index">03</span>
+          <h2 class="presta-card__name">COUPE ENFANT</h2>
+          <p class="presta-card__desc">
+            Pour les futurs hommes. Une coupe adaptée, réalisée avec soin et patience. Dès le plus jeune âge, nous posons les bases d'un style qui grandit avec eux.
+          </p>
+          <div class="presta-card__meta">
+            <span class="presta-card__duration">~ 20 MIN</span>
+            <span class="presta-card__price">15€</span>
+          </div>
+          <div class="presta-card__cta">
+            <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--sm">
+              <span class="btn__text">RÉSERVER</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 04 — Barbe -->
+        <article class="presta-card card-border lift" style="border-left: 1px solid rgba(201,168,106,0.2);">
+          <span class="presta-card__index">04</span>
+          <h2 class="presta-card__name">BARBE</h2>
+          <p class="presta-card__desc">
+            Taille, mise en forme, dégradé ou contour net au rasoir. Quelle que soit la longueur ou la texture de votre barbe, nous lui donnons la forme qu'elle mérite.
+          </p>
+          <div class="presta-card__meta">
+            <span class="presta-card__duration">~ 20 MIN</span>
+            <span class="presta-card__price">15€</span>
+          </div>
+          <div class="presta-card__cta">
+            <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--sm">
+              <span class="btn__text">RÉSERVER</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Mention tarifs -->
+      <div class="presta-extra">
+        <div class="presta-extra__text">
+          <h3>Tarifs à partir de</h3>
+          <p>Les prix indiqués sont les tarifs de base. Des options complémentaires peuvent être disponibles selon votre demande. Demandez-nous en salon.</p>
+        </div>
+        <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+           target="_blank" rel="noopener"
+           class="btn btn--gold">
+          <span class="btn__text">RÉSERVER EN LIGNE</span>
+        </a>
+      </div>
+
+      <div class="presta-note" style="padding: 24px var(--pad-x) var(--pad-y);">
+        <p>RÉSERVATION EN LIGNE · PLANITY · BOYS 2 MEN · ANNEMASSE 74100</p>
+      </div>
+    </section>
+
+    <!-- ================================================
+         GALERIE AMBIANCE
+         ================================================ -->
+    <section style="background: var(--black);">
+      <div class="immersion" style="max-height: 70vh;">
+        <div class="immersion__item img-zoom">
+          <img src="img/IMG_9148.JPG"
+               alt="Détail espace salon Boys 2 Men" loading="lazy">
+          <span class="immersion__caption">L'espace · Boys 2 Men</span>
+        </div>
+        <div class="immersion__item img-zoom">
+          <img src="img/IMG_9150.JPG"
+               alt="Produits et fauteuil Boys 2 Men" loading="lazy">
+        </div>
+        <div class="immersion__item img-zoom">
+          <img src="img/IMG_9149.JPG"
+               alt="Les deux fauteuils Boys 2 Men Annemasse" loading="lazy">
+          <span class="immersion__caption">Annemasse · 74100</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SOCIAL PROOF
+         ================================================ -->
+    <section class="reviews">
+      <div class="reviews__inner">
+        <div class="section-label" style="justify-content: center;"><span>Réputation</span></div>
+        <div class="reviews__score-wrap">
+          <span class="reviews__score">4.6</span>
+          <span class="reviews__denom">/5</span>
+        </div>
+        <div class="reviews__stars">★★★★★</div>
+        <p class="reviews__count">+260 avis vérifiés</p>
+        <p class="reviews__source">Google Reviews · Annemasse</p>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CTA
+         ================================================ -->
+    <section class="cta-final">
+      <div class="cta-final__bg">
+        <img src="img/devanture.png" alt="" loading="lazy">
+      </div>
+      <div class="cta-final__inner">
+        <div class="section-label" style="justify-content: center; margin-bottom: 32px;">
+          <span>Réservez maintenant</span>
+        </div>
+        <h2 class="cta-final__title">
+          <span class="hline"><span>VOTRE PROCHAINE</span></span>
+          <span class="hline"><span>COUPE VOUS ATTEND</span></span>
+        </h2>
+        <p class="cta-final__sub">Réservez votre créneau en ligne en quelques secondes. Sans attente, sans stress.</p>
+        <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g"
+           target="_blank" rel="noopener" class="btn btn--gold">
+          <span class="btn__text">RÉSERVER SUR PLANITY</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="footer__logo">BOYS <span>2</span> MEN</a>
+        <p class="footer__tagline">Le barber d'une génération. Precision, style, et caractère — à Annemasse.</p>
+        <div class="footer__social">
+          <a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g" target="_blank" rel="noopener">PLANITY</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Navigation</p>
+        <nav class="footer__nav">
+          <a href="index.html">Accueil</a>
+          <a href="concept.html">Concept</a>
+          <a href="prestations.html">Prestations</a>
+          <a href="nous-rejoindre.html">Nous Rejoindre</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <div class="footer__info">
+          <p>Annemasse, 74100<br>Haute-Savoie, France</p>
+          <p><a href="https://www.planity.com/boys-2-men-74100-annemasse-w9g" target="_blank" rel="noopener">Réserver en ligne →</a></p>
+          <p>Lun — Sam<br>9h00 — 19h00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Boys 2 Men · Barber Annemasse · Tous droits réservés</p>
+      <p>Barber · Annemasse · 74100</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
